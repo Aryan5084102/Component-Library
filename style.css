@@ -1,3 +1,10 @@
+:root{
+    --primary-color: black;
+    --secondary-color: rgb(11,121,118);
+    --tertiary-color: #fff;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: var(--primary-color);
 }
 .left-header-content{
     display: flex;
@@ -24,13 +31,13 @@ header{
 .logo-text a{
     font-size: 40px;
     font-weight: 900;
-    color: rgb(11,121,118);
+    color: var(--secondary-color);
     text-decoration: none;
     margin-left: 5px;
     cursor: pointer;
 }
 .logo-text a:hover{
-    color: #fff;
+    color: var(--tertiary-color);
 }
 .right-header-content{
     display: flex;
@@ -42,18 +49,18 @@ header{
 .home a{
     text-decoration: none;
     font-size: 30px;
-    color: rgb(11,121,118);
+    color: var(--secondary-color);
 }
 .home a:hover{
-    color: #fff;
+    color: var(--tertiary-color);
 }
 .documentation a{
     text-decoration: none;
     font-size: 30px;
-    color: rgb(11,121,118);
+    color: var(--secondary-color);
 }
 .documentation a:hover{
-    color: #fff;
+    color: var(--tertiary-color);
 }
 .center-content{
     display: flex;
@@ -76,11 +83,11 @@ header{
 }
 .left-content span{
     font-size: 50px;
-    color: #fff;
+    color: var(--tertiary-color);
     margin-top: 4px;
     padding: 5px 5px;
     border-radius: 10px;
-    background-color: rgb(11,121,118);
+    background-color: var(--secondary-color);
     letter-spacing: 5px;
 }
 .left-content p{
@@ -96,7 +103,7 @@ header{
 
  .left-content button a{
     text-decoration: none;
-    color: rgb(11,121,118);
+    color: var(--secondary-color);
  }
 .left-content button {
     position: relative;
@@ -113,14 +120,14 @@ header{
     z-index: 1;
   }
   .left-content button .started:hover{
-    color: #fff ;
+    color: var(--tertiary-color) ;
   }
   
   .left-content button::before {
     content: "";
     position: absolute;
     inset: 1px;
-    background: #fff;
+    background: var(--tertiary-color);
     border-radius: 25px;
     transition: 0.5s;
   }
