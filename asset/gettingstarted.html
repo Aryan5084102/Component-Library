@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./gettingstarted.css">
     <title>Getting Started</title>
@@ -11,15 +12,28 @@
     <header>
         <div class="left-header-content">
             <img src="../images/favicon.png" height="60px" width="80px" >
-            <div class="logo-text"><a href="./index.html">GlaryanUI</a></div>
+            <div class="logo-text"><a href="../index.html">GlaryanUI</a></div>
         </div>
         <div class="right-header-content">
-            <div class="home"><a href="./index.html">Home</a></div>
+            <div class="home"><a href="../index.html">Home</a></div>
             <div class="documentation"><a href="https://github.com/Aryan5084102">GitHub</a></div>
-        </div>
-    </header>
+      </div>
+    </header> 
     <main>
         <div class="left-sidebar">
+            <div class="item" id="installation"> <a href="#installation">Installation</a></div>
+            <div class="item"> <a href="#avatar">Avatar</a></div>
+            <div class="item"> <a href="#alert">Alert</a></div>
+            <div class="item"> <a href="#badge">Badge</a></div>
+            <div class="item"> <a href="#button">Button</a></div>
+            <div class="item"> <a href="#card">Card</a></div>
+            <div class="item"> <a href="#input">Input</a></div>
+            <div class="item"> <a href="#text-utility">Text-utility</a></div>
+            <div class="item"> <a href="#navigation">Navigation</a></div>
+            <div class="item"> <a href="#list">List</a></div>
+            <div class="item"> <a href="#snackbar">Snackbar</a></div>
+            <div class="item"> <a href="#rating">Rating</a></div>
+            <div class="item"> <a href="#grid">Grid</a></div>
             <div class="item"> <a href="#">Installation</a></div>
             <div class="item"> <a href="#">Avatar</a></div>
             <div class="item"> <a href="#">Alert</a></div>
@@ -40,9 +54,523 @@
             <div class="item"> <a href="#">item-1</a></div>
             <div class="item"> <a href="#">item-1</a></div>
             <div class="item"> <a href="#">item-1</a></div>
+                getting-started
         </div>
         <div class="right-sidebar">
-ef
+            <div id="installation">
+                <h1>How to install ? </h1>
+                <p class="badge-subheading">Well, This is the most easy part. Just copy, paste the code below and <span>GlaryanUI</span> will do all the hardwork for you.
+                  Remember to paste Font Awesome CDN Link in your HTML file before using and use js cdn below before ending of body tag.</p>
+                  <h3 class="avatar-title">CSS CDN Link &#128071</h3>
+                  <iframe
+                  src="https://carbon.now.sh/embed/8QWYNvyOJw2QX3GzAM69"
+                  style="width: 913px; height: 265px; border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <div id="avatar">
+                <h1>Avatar </h1>
+                <p class="avatar-subheading">Avatar can be used to show user's profile picture on profile information page, on navigation bar.</p>
+                <h3 class="avatar-title">Sample Avatar : </h3>
+                <p class="avatar-para">Avatar is available in different sizes. You can use any image in Avatar. You need to include class<span> avatar-images</span> and for size add class according to size <span>extra-large, large, medium, small</span>  (e.g. <span>class="avatar-container avatar-large"</span> )</p>
+                <div class="avatar-images">
+                    <div class="extra-large">
+                        <img src="../images/avatar-img.jpg" alt="avatar">
+                    </div>
+                    <div class="large">
+                        <img src="../images/avatar-img.jpg" alt="avatar">
+                    </div>
+                    <div class="medium">
+                        <img src="../images/avatar-img.jpg" alt="avatar">
+                    </div>
+                    <div class="small">
+                        <img src="../images/avatar-img.jpg" alt="avatar">
+                    </div>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/hBqmIYjccRs1uepl0eBp"
+                style="width: 913px; height: 465px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+
+            <div id="alert">
+                <h1>Alert</h1>
+                <p class="alert-subheading">Alerts are used to attract user's attention for important information without interrupting the user's flow.</p>
+                <h3 class="alert-title">Sample Alert :</h3>
+                <p class="alert-para">Available Alerts are- success alert, error alert, warning alert, primary alert, secondary alert. To use this alert just use class name<span>alert-box</span> and also add class according to alert type- <span>alert-success, alert-error, alert-info </span>  (e.g. <span>class = "alert-box alert-success"</span> )</p>
+                <div class="alert-box">
+
+                      <div class="alert alert-success">
+                        <strong>Success!</strong> Your action was successful.
+                      </div>
+
+                      <div class="alert alert-error">
+                        <strong>Error!</strong> An error occurred while processing your request.
+                      </div>
+                      
+                      <div class="alert alert-info">
+                        <strong>Info:</strong> This is an informative message.
+                      </div>
+
+                      <div class="alert alert-custom">
+                        <i class="fas fa-info-circle"></i>
+                        <p>This is a custom alert with an icon.</p>
+                      </div>
+
+                      <div class="alert alert-notification">
+                        <p>New notification received.</p>
+                      </div>
+
+                      <div class="alert alert-confirmation">
+                        <p>Are you sure you want to delete this item?</p>
+                        <button>Yes</button>
+                        <button>No</button>
+                      </div>
+
+                      <div class="alert alert-custom-styled">
+                        <p>This is a custom-styled alert.</p>
+                      </div>
+
+                      <div class="alert alert-announcement">
+                        <p>New announcement: Check your inbox for details.</p>
+                      </div>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/tJeCujhqTq73SxMrkJpp"
+                style="width: 945px; height: 842px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+            <div id="badge">
+                <h1>Badge </h1>
+                <p class="badge-subheading">Some badges which we are use as <span>Success, warning, info, danger</span></p>
+                <div class="badge-box">
+                    <span class="badge success">Success</span>
+                    <span class="badge warning">Warning</span>
+                    <span class="badge info">Info</span>
+                    <span class="badge danger">Danger</span>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/LIQdq9GOwy5GJASnFBNG"
+                style="width: 945px; height: 302px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+                <h3 class="badge-title">Sample Badge :</h3>
+                <p class="badge-subheading">Four type of badges are available which can be used with Avatar. Use class names badge circular, badge square etc  for different badges.</p>
+                <div class="badge-avatar">
+                    <div class="badge circular">
+                        <img src="../images/avatar-img.jpg" alt="Avatar">
+                      </div>
+                      <div class="badge square">
+                        <img src="../images/avatar-img.jpg" alt="Avatar">
+                      </div>
+                      <div class="badge rounded-rectangle">
+                        <img src="../images/avatar-img.jpg" alt="Avatar">
+                      </div>
+                      <div class="badge diamond">
+                        <img src="../images/avatar-img.jpg" alt="Avatar">
+                      </div>
+                      <div class="badge hexagonal">
+                        <img src="../images/avatar-img.jpg" alt="Avatar">
+                      </div>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/D99yIkwwOKtPRgY3bGPB"
+                style="width: 945px; height: 442px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+
+            <div id="button">
+                <h1>Button </h1>
+                <p class="badge-subheading">Buttons are also called as call to action. We have range of buttons and their states.</p>
+                <h3 class="badge-title">Sample Primary and Float Buttons with Links  :</h3>
+                <p class="badge-subheading">Whenever you want your user to click on a link or button, use primary style buttons.</p>
+                <div class="btn-box">
+                    <button class="button primary">Primary Button</button>
+                    <button class="button secondary">Secondary Button</button>
+                    <button class="button outline">Outline Button</button>
+                    <button class="button rounded">Rounded Button</button>
+                    <button class="button icon">
+                        <i class="fas fa-star"></i>
+                      </button>
+                      <button class="btn success">Success Button</button>
+                      <button class="btn danger">Danger Button</button>
+                      <button class="btn warning">Warning Button</button>
+                      <button class="btn info">Info Button</button>
+                      <button class="btn large">Large Button</button>
+                      <button class="btn ghost">Ghost Button</button>
+                      <button class="btn icon"><i class="fas fa-heart"></i> Like</button>
+
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/bLEjkL7YpqejgyMptXqk"
+                style="width: 945px; height: 442px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+            <div id="card">
+                <h1>Card </h1>
+                <p class="badge-subheading">Card are used to show user related data collectively, like product details.
+                </p>
+                <h3 class="badge-title">Sample Card :</h3>
+                <p class="badge-subheading">Whenever you want your user to click on a link or button, use below button buttons.</p>
+                <div class="cards">
+                    <div class="card neumorphic">
+                        <h3>Simple Card</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eius magn.</p>
+                      </div>
+
+                      <div class="card polaroid">
+                        <img src="../images/cardpic.jpg" alt="Card Image">
+                        <div class="card-content">
+                          <h3>Curve Card</h3>
+                          <p>Type something here.</p>
+                        </div>
+                      </div>
+
+                      <div class="card folded-paper">
+                        <div class="fold"></div>
+                        <div class="card-content">
+                          <h3>Folded  Card</h3>
+                          <p>This card has a folded paper effect with a 3D fold in the top-right corner.</p>
+                        </div>
+                      </div>
+
+                      <div class="card zigzag">
+                        <h3>Zigzag Card</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur natus incidunt, asperiores assumenda inventore!.</p>
+                      </div>
+
+                      <div class="card tilted">
+                        <h3>Rotating Card</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias qui non optio, dicta sint laboriosam totam eligendi. Quam nulla nihil illo laudantium obcaecati?.</p>
+                      </div>
+
+                      <div class="card hover-image">
+                        <div class="card-content">
+                          <h3>Hover Image Card</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia minus aliquam rem..</p>
+                        </div>
+                        <img src="../images/cardpic.jpg" alt="Card Image">
+                      </div>
+
+                      <div class="card overlay-hover-image">
+                        <img src="../images/cardpic.jpg" alt="Card Image">
+                        <div class="overlay"></div>
+                        <div class="card-content">
+                          <h3>Overlay Hover Image Card</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus corrupti corporis quidem.</p>
+                        </div>
+                      </div>
+
+                      <div class="card image-overlay">
+                        <img src="../images/cardpic.jpg" alt="Card Image">
+                        <div class="overlay-content">
+                          <h3>Card Title</h3>
+                          <p>This is a card with a button overlay.</p>
+                          <button class="btn primary">Learn More</button>
+                        </div>
+                      </div>
+
+                      <div class="card hover-effect">
+                        <img src="../images/cardpic.jpg" alt="Card Image">
+                        <div class="card-content">
+                          <h3>Card Title</h3>
+                          <p>This card has a hover effect with a button.</p>
+                          <button class="btn info">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+
+                      <h3 class="avatar-title">Source Code &#128071</h3>
+                      <iframe
+                      src="https://carbon.now.sh/embed/fCa0svXeMYEsYYY3Sm2Z"
+                      style="width: 845px; height: 842px; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+            </div>
+            <div id="input">
+                <h1>Input </h1>
+                <p class="badge-subheading">The various types of input field.
+                </p>
+                <h3 class="badge-title">Sample Inputs:</h3>
+                <p class="badge-subheading">You can use these input just by copy and pasting.</p>
+
+                <div class="input-box">
+                      <div class="input-container">
+                        <input type="text" placeholder="Enter your text">
+                        <button class="btn primary">Submit</button>
+                      </div>
+
+                      <div class="input-container search">
+                        <input type="text" placeholder="Search...">
+                        <button class="btn secondary">Search</button>
+                      </div>
+
+                      <div class="input-container checkbox-button">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">I agree to the terms</label>
+                        <button class="btn success">Submit</button>
+                      </div>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/6JIHxx7ue1UTNqTcUXWP"
+                style="width: 945px; height: 442px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+                  
+            </div>
+            <div id="text-utility">
+                <h1>Text-Utility </h1>
+                <p class="badge-subheading">Texts are used to show different imformations.
+                </p>
+                <h3 class="badge-title">Sample Text:</h3>
+                <p class="badge-subheading">You can these Text just by adding respective class names.</p>
+                <div class="text-utility-box">
+                    <p class="text-highlight">This is highlighted text.</p>
+                    <p class="text-underline">This text is underlined.</p>
+                    <p class="text-uppercase">This text is capitalized.</p>
+                    <p class="text-ellipsis">This is a long piece of text that will be truncated with an ellipsis if it exceeds the container width.</p>
+                    <p class="text-custom-style">This text has a custom font size and color.</p>
+
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/cWWPAHGECcMb3xx33MKQ"
+                style="width: 945px; height: 302px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+            <div id="navigation">
+                <h1>Navigation </h1>
+                <p class="badge-subheading">Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive.
+                </p>
+                <h3 class="badge-title">Sample Card :</h3>
+                <p class="badge-subheading">You can this navigation bar just by copy and pasting.</p>
+                <div class="navbar-box">
+                    <nav class="navbar dark-mode">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                      </nav>
+
+                      <nav class="navbar gradient-background">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                      </nav>
+
+                      <nav class="navbar icon-search">
+                        <div class="navbar-logo">Logo</div>
+                        <div class="navbar-items">
+                          <a href="#"><i class="fas fa-home"></i></a>
+                          <a href="#"><i class="fas fa-info-circle"></i></a>
+                          <a href="#"><i class="fas fa-cogs"></i></a>
+                          <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="navbar-search">
+                          <input type="text" placeholder="Search">
+                          <button><i class="fas fa-search"></i></button>
+                        </div>
+                      </nav>
+
+                      <nav class="navbar social-icons">
+                        <div class="navbar-logo">Logo</div>
+                        <div class="navbar-items">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                      </nav>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/QKOhFU4GRYD43cpjgiIe"
+                style="width: 945px; height: 742px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+
+            <div id="list">
+                <h1>List </h1>
+                <p class="badge-subheading">Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.
+                </p>
+                <h3 class="badge-title">Sample Card :</h3>
+                <p class="badge-subheading">Add class according to bullet style. Copy html code below and add your desired list items.</p>
+                <div class="list-box">
+                    <ul class="list simple">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                      </ul>
+
+                      <ol class="list numbered">
+                        <li>Step 1</li>
+                        <li>Step 2</li>
+                        <li>Step 3</li>
+                        <li>Step 4</li>
+                      </ol>
+                      
+                      <ul class="list checkmark">
+                        <li>Task 1</li>
+                        <li>Task 2</li>
+                        <li>Task 3</li>
+                        <li>Task 4</li>
+                      </ul>
+
+                      <ul class="list horizontal">
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                        <li>Option 4</li>
+                      </ul>
+
+                      <ul class="list custom-styled">
+                        <li><i class="fas fa-star"></i> Feature 1</li>
+                        <li><i class="fas fa-heart"></i> Feature 2</li>
+                        <li><i class="fas fa-check"></i> Feature 3</li>
+                        <li><i class="fas fa-globe"></i> Feature 4</li>
+                      </ul>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/4nhIoKHJe83i6r7HA2Uy"
+                style="width: 945px; height: 842px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+            <div id="snackbar">
+                <h1>Snackbar </h1>
+                <p class="badge-subheading">This component can be used for toast or snackbar component. Snackbar is to used show message that need user action.
+                </p>
+                <h3 class="badge-title">Sample Card :</h3>
+                <p class="badge-subheading">You can use snackbar to show notifications and error,sucess and warn messages.</p>
+                <div class="snackbar-box">
+                  <div class="snackbar success">
+                     Successful!
+                  </div>
+
+                  <div class="snackbar error">
+                    Something went wrong!
+                  </div>
+
+                  <div class="snackbar with-action">
+                    Changes saved successfully! <button class="btn">Undo</button>
+                  </div>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/vUqs89pUVXjdphLGFFiD"
+                style="width: 945px; height: 342px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+            <div id="rating">
+                <h1>Rating </h1>
+                <p class="badge-subheading">Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.
+                </p>
+                <h3 class="badge-title">Sample Card :</h3>
+                <p class="badge-subheading">You can use Rating just by copy pasting code below.</p>
+                <div class="rating-box">
+                  <div class="rating heart">
+                    <input type="radio" id="heart5" name="rating" value="5"><label for="heart5">❤️</label>
+                    <input type="radio" id="heart4" name="rating" value="4"><label for="heart4">❤️</label>
+                    <input type="radio" id="heart3" name="rating" value="3"><label for="heart3">❤️</label>
+                    <input type="radio" id="heart2" name="rating" value="2"><label for="heart2">❤️</label>
+                    <input type="radio" id="heart1" name="rating" value="1"><label for="heart1">❤️</label>
+                  </div>
+                  
+
+                  <div class="rating emoji">
+                    <input type="radio" id="emoji5" name="rating" value="5"><label for="emoji5">😍</label>
+                    <input type="radio" id="emoji4" name="rating" value="4"><label for="emoji4">😊</label>
+                    <input type="radio" id="emoji3" name="rating" value="3"><label for="emoji3">😐</label>
+                    <input type="radio" id="emoji2" name="rating" value="2"><label for="emoji2">😕</label>
+                    <input type="radio" id="emoji1" name="rating" value="1"><label for="emoji1">😠</label>
+                  </div>
+                  
+                  <div class="rating thumbs">
+                    <input type="radio" id="thumbs-up" name="rating" value="up"><label for="thumbs-up">👍</label>
+                    <input type="radio" id="thumbs-down" name="rating" value="down"><label for="thumbs-down">👎</label>
+                  </div>
+
+                  <div class="rating radio">
+                    <input type="radio" id="radio5" name="rating" value="5"><label for="radio5">5</label>
+                    <input type="radio" id="radio4" name="rating" value="4"><label for="radio4">4</label>
+                    <input type="radio" id="radio3" name="rating" value="3"><label for="radio3">3</label>
+                    <input type="radio" id="radio2" name="rating" value="2"><label for="radio2">2</label>
+                    <input type="radio" id="radio1" name="rating" value="1"><label for="radio1">1</label>
+                  </div>
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/shvm2a9JYxv5BJb4mOXc"
+                style="width: 1045px; height: 842px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+            <div id="grid">
+                <h1>Grid </h1>
+                <p class="badge-subheading">Grid creates complex responsive web design grid layouts more easily and consistently across browsers. </p>
+                <h3 class="badge-title">Sample Card :</h3>
+                <p class="badge-subheading">You can use grid just by copy pasting code below. for several types grid boxes  are available.</p>
+                <div class="grid-box">
+                  <div class="grid image-cards">
+                    <div class="grid-item">
+                      <img src="../images/avatar-img.jpg" alt="Image 1">
+                      <p>Card 1</p>
+                    </div>
+                    <div class="grid-item">
+                      <img src="../images/avatar-img.jpg" alt="Image 2">
+                      <p>Card 2</p>
+                    </div>
+                    <div class="grid-item">
+                      <img src="../images/avatar-img.jpg" alt="Image 3">
+                      <p>Card 3</p>
+                    </div>
+                  </div>
+
+                  <div class="grid centered">
+                    <div class="grid-item large">1</div>
+                    <div class="grid-item small">2</div>
+                    <div class="grid-item small">3</div>
+                    <div class="grid-item medium">4</div>
+                    <div class="grid-item large">5</div>
+                    <div class="grid-item small">6</div>
+                  </div>
+
+                  <div class="grid masonry">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                  </div>
+               
+                  
+                </div>
+                <h3 class="avatar-title">Source Code &#128071</h3>
+                <iframe
+                src="https://carbon.now.sh/embed/jF3kmftNxPinYqIUdquC"
+                style="width: 945px; height: 842px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
         </div>
     </main>
 
